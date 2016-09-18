@@ -61,7 +61,7 @@ module Agents
     end
 
     def key_setup?
-      interpolated['api_key'].present? && interpolated['api_key'] != "your-key"
+      interpolated['api_key'].present? && interpolated['api_key'] != "your-key" && interpolated['api_key'] != "put-your-key-here"
     end
 
     def default_options
